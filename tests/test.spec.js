@@ -7,7 +7,6 @@ describe('Test', () => {
 
     it('Intercept browser requests', async () => {
         const demoBlazeApi = await browser.waitUntil(async () => await interceptRequests.calls.find((call) => call.url === 'https://api.demoblaze.com/entries'));
-        console.log(demoBlazeApi)
-        console.log(demoBlazeApi)
+        console.log(demoBlazeApi);
     })
 })
